@@ -34,39 +34,45 @@ namespace StudentStudyHub
             Series series = new Series("StudyDataSeries");
             series.ChartType = SeriesChartType.Line;
 
-            Series goal = new Series("StudyDataSeries");
+            // Create a new series for the secondary Y-axis
+            Series goal = new Series("GoalDataSeries");
             goal.ChartType = SeriesChartType.Line;
 
             // Add data points to the series
             foreach (StudyData studyData in graphData)
             {
-                series.Points.AddXY(studyData.HoursWorked, studyData.CurWeek);
+                series.Points.AddXY(studyData.CurWeek, studyData.HoursWorked);
 
+            }
+            for (int i = 0; i <( graphData.Count +4); i++)
+            {
+               
+                // Add corresponding data points for the secondary Y-axis
+                goal.Points.AddXY(i, 12);
             }
             // Add the series to the chart
             Chart1.Series.Add(series);
-          
-            Chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = true;
-            Chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = true;
+            Chart1.Series.Add(goal);
+
+            // Associate the secondary Y-axis with the series
+            Chart1.Series["GoalDataSeries"].YAxisType = AxisType.Secondary;
+
             // Configure the Chart control for a line graph
             Chart1.Series["StudyDataSeries"].ChartType = SeriesChartType.Line;
-
-            // Set some additional properties for better visualization (you can adjust these as needed)
-            Chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = true;
-            Chart1.ChartAreas["ChartArea1"].AxisY.MajorGrid.Enabled = true;
-         
-
-
+            Chart1.Series["GoalDataSeries"].ChartType = SeriesChartType.Line;
+            
+            // Update the Legend
             Legend legend = Chart1.Legends.FindByName("Legend1");
-
             if (legend == null)
             {
-                // Legend with the name "Legend1" does not exist, so create a new one
                 legend = new Legend("Legend1");
                 Chart1.Legends.Add(legend);
             }
             Chart1.Series["StudyDataSeries"].Legend = "Legend1";
+            Chart1.Series["GoalDataSeries"].Legend = "Legend1";
+
             Chart1.Series["StudyDataSeries"].ToolTip = "#VALY hours";
+            Chart1.Series["GoalDataSeries"].ToolTip = "#VALY Goal";
         }
     }
 }
