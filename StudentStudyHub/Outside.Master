@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Outside.Master.cs" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head runat="server">
+   
+    <title></title>
+    <%--bootstrap css--%><link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%><link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome css--%><link href="fontawesome/css/all.css" rel="stylesheet" />
+    <%--boostrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+
+    <%--our custom css--%>
+    <link href="Style/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Navigation Bar for Login Page/ Register -->
+        <nav id="loginNavBar" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    
+                </a>
+                <a class="navbar-brand" href="#">Study Hub</a>
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Login.aspx">Login
+                       
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Register.aspx">Register</a>
+                        </li>                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div style="margin-bottom: 80px;"></div>
+            <div class="card border-success mb-12">
+                <div class="card-header  text-center">
+                    <p class="card-text" style="color: whitesmoke">&copy; All right Reversed. <a class="footerlinks" href="#" target="_blank">Study Hub</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- ./Footer -->
+    </form>
+</body>
+
+</html>
