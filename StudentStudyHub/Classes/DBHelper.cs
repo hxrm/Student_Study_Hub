@@ -57,8 +57,9 @@ select * from [dbo].[STUDY_TRACKER]
             userID = inputUser;
             FindModulesByUserID();
             FindSemesterByUserID();
+            GetStudyData();
         }
-        public List<StudyData> GetStudyData(int userId)
+        public List<StudyData> GetStudyData()
         {           
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -70,7 +71,7 @@ select * from [dbo].[STUDY_TRACKER]
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@UserId", userId);
+                    command.Parameters.AddWithValue("@UserId", userID);
 
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
@@ -81,7 +82,8 @@ select * from [dbo].[STUDY_TRACKER]
                                 ModID = Convert.ToInt32(reader["ModID"]),
                                 CurWeek = Convert.ToInt32(reader["CurWeek"]),
                                 HoursWorked = Convert.ToInt32(reader["HoursWorked"]),
-                                RemainHours = Convert.ToInt32(reader["RemainHours"])
+                                //update to the found module exp hours
+                                GoalHrs = 12
                             };
 
                             studyDataList.Add(studyData);
@@ -504,7 +506,7 @@ select * from [dbo].[STUDY_TRACKER]
         public int ModID { get; set; }
         public int CurWeek { get; set; }
         public int HoursWorked { get; set; }
-        public int RemainHours { get; set; }
+        public int GoalHrs{ get; set; }
     }
 
 }

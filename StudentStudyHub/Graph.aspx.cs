@@ -34,36 +34,39 @@ namespace StudentStudyHub
             Series series = new Series("StudyDataSeries");
             series.ChartType = SeriesChartType.Line;
 
+            Series goal = new Series("StudyDataSeries");
+            goal.ChartType = SeriesChartType.Line;
+
             // Add data points to the series
             foreach (StudyData studyData in graphData)
             {
-                series.Points.AddXY(studyData.CurWeek, studyData.HoursWorked);
-            }
+                series.Points.AddXY(studyData.HoursWorked, studyData.CurWeek);
 
+            }
             // Add the series to the chart
             Chart1.Series.Add(series);
-
-            // Set chart properties as needed
-            Chart1.ChartAreas[0].AxisX.Title = "Week";
-            Chart1.ChartAreas[0].AxisY.Title = "Hours Worked";
-            Chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
-            Chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+          
+            Chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = true;
+            Chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = true;
             // Configure the Chart control for a line graph
-          //  Chart1.Series["Series1"].ChartType = SeriesChartType.Line;
-          //  Chart1.Series["IdealSeries"].ChartType = SeriesChartType.Line;
+            Chart1.Series["StudyDataSeries"].ChartType = SeriesChartType.Line;
 
             // Set some additional properties for better visualization (you can adjust these as needed)
-            Chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
-            Chart1.ChartAreas["ChartArea1"].AxisY.MajorGrid.Enabled = false;
-            Chart1.ChartAreas["ChartArea1"].AxisX.Title = "Week";
-            Chart1.ChartAreas["ChartArea1"].AxisY.Title = "Hours";
+            Chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = true;
+            Chart1.ChartAreas["ChartArea1"].AxisY.MajorGrid.Enabled = true;
+         
 
-            // Optionally, you can add legends and tooltips
-            Chart1.Legends.Add(new Legend("Legend1"));
-           // Chart1.Series["Series1"].Legend = "Legend1";
-            //Chart1.Series["IdealSeries"].Legend = "Legend1";
-          //  Chart1.Series["Series1"].ToolTip = "#VALY hours";
-           // Chart1.Series["IdealSeries"].ToolTip = "Ideal: #VALY hours";
+
+            Legend legend = Chart1.Legends.FindByName("Legend1");
+
+            if (legend == null)
+            {
+                // Legend with the name "Legend1" does not exist, so create a new one
+                legend = new Legend("Legend1");
+                Chart1.Legends.Add(legend);
+            }
+            Chart1.Series["StudyDataSeries"].Legend = "Legend1";
+            Chart1.Series["StudyDataSeries"].ToolTip = "#VALY hours";
         }
     }
 }
