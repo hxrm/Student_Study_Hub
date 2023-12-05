@@ -64,7 +64,7 @@
                             </asp:ChartArea>
                         </ChartAreas>
                         <Legends>
-                            <asp:Legend Name="Legend1"></asp:Legend>
+                            <asp:Legend Name="Legend1" BackColor="Transparent" Font="Sans Serif" AutoFitMinFontSize="20"  ForeColor="WhiteSmoke"></asp:Legend>
                         </Legends>
                         <BorderSkin BorderColor="Transparent" PageColor="DarkSlateBlue" />
                     </asp:Chart>

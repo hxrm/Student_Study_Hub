@@ -6,7 +6,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container-fluid" style="padding-block-start: 15px">
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-11 mx-auto">
@@ -37,7 +36,8 @@
                                 </div>
                             </div>
                             <!-- Input Sem Data-->
-                            <div class="row" id="SemData">
+                            <div id="SemData" runat="server" >
+                            <div class="row"  >
                                 <!-- Semester Start Date -->
                                 <div class="col-md-6">
                                     <label>Semester Start Date</label>
@@ -66,6 +66,7 @@
                                     <!-- Horizontal row (line) -->
                                 </div>
                             </div>
+                                </div>
                             <!-- Input Row 1 -->
                             <div class="row">
                                 <!-- Module Name -->
@@ -132,9 +133,9 @@
                                 </div>
 
                             </div>
-                        </div>
+    </div>
 
-                    </div>
+    </div>
                 </div>
 
             </div>

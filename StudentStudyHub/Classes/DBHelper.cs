@@ -17,15 +17,7 @@ using System.Windows;
 //using System.Windows.Media;
 
 namespace StudentStudyHub.Classes
-{/*select * from [dbo].[User] 
-select * from [dbo].[MODULE] 
-select * from [dbo].[ST_SEMESTER] 
-select * from [dbo].[STUDY_TRACKER]
-
---DELETE FROM [dbo].[User]
---DELETE FROM [dbo].[MODULE]
---DELETE FROM [dbo].[ST_SEMESTER]
---DELETE FROM [dbo].[STUDY_TRACKER] */
+{
     public class DBHelper
     {
         // Database path and connection string

@@ -38,6 +38,7 @@ namespace StudentStudyHub
                 weeksLeft.Enabled = false;
                 dateError.Visible = false;
                 weeksError.Visible = false;
+                SemData.Visible = false;
 
             }
             else
@@ -77,6 +78,7 @@ namespace StudentStudyHub
                     dbHelper.SaveSemester(sem);
                 }
             }
+            EnableSem();
         }
 
         public void CreateMod()

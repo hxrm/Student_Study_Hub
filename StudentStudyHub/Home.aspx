@@ -7,9 +7,8 @@
     <section>
         <div class="container">
             <div class="card border-dark" style="padding: 20px">
-                <h6 class="text-white">Welcome</h6>
+                <h2 class="text-white"> Welcome To Study Hub </h2>
                 <hr />
-                <p class="text-justify text-white"><small>Study Progression:</small></p>
             </div>
 
             <%--Row 1--%>
@@ -25,7 +24,7 @@
                     <div class="col-md-3">
                         <center>
                             <a href="CreateModules.aspx" style="text-decoration: none">
-                                <img width="110" src="/Style/library.png" />
+                                <img width="110" src="Style/nlibrary.png" />
                                 <h5 class="text-white" style="padding-top: 10px">Create New Module</h5>
                             </a>
                             <p class="text-justify text-white"><small>add new module to your module list for current semester</small></p>
@@ -60,7 +59,7 @@
                                 <img width="120" src="/Style/Graph.png" />
                                 <h5 class="text-white">Study Progress Graph</h5>
                             </a>
-                            <p class="text-justify text-white"><small>View of study progression graph</small></p>
+                            <p class="text-justify text-white"><small>View a visual of your study progress</small></p>
 
                         </center>
                     </div>

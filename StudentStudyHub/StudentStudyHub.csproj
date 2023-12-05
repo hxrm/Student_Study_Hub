@@ -2184,7 +2184,7 @@
     <Content Include="ModuleList.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Style\ebook.png" />
-    <Content Include="Style\library.png" />
+    <Content Include="Style\nlibrary.png" />
     <Content Include="Style\Logo1.png" />
     <Content Include="Style\Graph.png" />
     <Content Include="Style\Style.css" />

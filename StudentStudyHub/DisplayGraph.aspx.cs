@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.DataVisualization.Charting;
+using System.Drawing;
 
 namespace StudentStudyHub
 {
@@ -102,7 +103,7 @@ namespace StudentStudyHub
                 {
                     series.Points.AddXY(i, 0);
                 }
-                msgHrs2.Text = "No hours saved for module, " + DBHelper.moduleList[selectedIndex].ExeStudyHrs + " hours expected for module.";
+                msgHrs2.Text = "No hours saved for module,  " + DBHelper.moduleList[selectedIndex].ExeStudyHrs + " hours expected for module.";
                 msgHrs2.Visible = true;
             }
             for (int i = 0; i < size; i++)
@@ -112,6 +113,7 @@ namespace StudentStudyHub
             // Add the series to the chart
             Chart1.Series.Add(series);
             Chart1.Series.Add(goal);
+
 
 
             // Update the Legend
