@@ -24,24 +24,6 @@ namespace StudentStudyHub
         protected global::System.Web.UI.WebControls.Label saveMsg;
 
         /// <summary>
-        /// modName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox modName;
-
-        /// <summary>
-        /// nameError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label nameError;
-
-        /// <summary>
         /// startDate control.
         /// </summary>
         /// <remarks>
@@ -60,24 +42,6 @@ namespace StudentStudyHub
         protected global::System.Web.UI.WebControls.Label dateError;
 
         /// <summary>
-        /// modCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox modCode;
-
-        /// <summary>
-        /// codeError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label codeError;
-
-        /// <summary>
         /// weeksLeft control.
         /// </summary>
         /// <remarks>
@@ -94,6 +58,42 @@ namespace StudentStudyHub
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label weeksError;
+
+        /// <summary>
+        /// modName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox modName;
+
+        /// <summary>
+        /// nameError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label nameError;
+
+        /// <summary>
+        /// modCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox modCode;
+
+        /// <summary>
+        /// codeError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label codeError;
 
         /// <summary>
         /// modCredits control.

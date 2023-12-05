@@ -20,7 +20,7 @@
            <div class="row">
                 <div class="col">
                     <center>
-                        <asp:Label ID="msgHrs2" runat="server" CssClass="text-waring" Visible="false"></asp:Label>
+                        <asp:Label ID="msgHrs2" runat="server" CssClass="text-warning" Visible="false"></asp:Label>
                     </center>
                 </div>
             </div>

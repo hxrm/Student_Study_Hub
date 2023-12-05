@@ -105,6 +105,7 @@
     <Content Include="CurrentHours.aspx" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
+    <Content Include="DisplayGraph.aspx" />
     <Content Include="fontawesome\css\all.css" />
     <Content Include="fontawesome\css\all.min.css" />
     <Content Include="fontawesome\css\brands.css" />
@@ -2185,6 +2186,7 @@
     <Content Include="Style\ebook.png" />
     <Content Include="Style\library.png" />
     <Content Include="Style\Logo1.png" />
+    <Content Include="Style\Graph.png" />
     <Content Include="Style\Style.css" />
     <Content Include="Style\trophy.png" />
     <Content Include="Web.config" />
@@ -2214,6 +2216,13 @@
     </Compile>
     <Compile Include="CurrentHours.aspx.designer.cs">
       <DependentUpon>CurrentHours.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayGraph.aspx.cs">
+      <DependentUpon>DisplayGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayGraph.aspx.designer.cs">
+      <DependentUpon>DisplayGraph.aspx</DependentUpon>
     </Compile>
     <Compile Include="Graph.aspx.cs">
       <DependentUpon>Graph.aspx</DependentUpon>

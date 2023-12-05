@@ -22,7 +22,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-          <!-- Navigation Bar -->
+        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -45,12 +45,11 @@
                             </a>
                         </li>
 
-                        <li class="nav-item" >
-                            <a class="nav-link" href="ModuleList.aspx">View Modules</a>
-                        </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="CreateModules.aspx">Create New Module</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ModuleList.aspx">View Modules</a>
                         </li>
 
                         <li class="nav-item">
@@ -58,13 +57,16 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="CurrentHours.aspx">View Study Hours</a>
+                            <a class="nav-link" href="CurrentHours.aspx">View Study Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DisplayGraph.aspx">View Study Progress Graph</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-         <!-- ./Navigation Bar -->
+        <!-- ./Navigation Bar -->
         <!-- Main Content Placeholder -->
         <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

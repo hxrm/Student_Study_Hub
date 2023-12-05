@@ -15,7 +15,7 @@ namespace StudentStudyHub
         int week = 0;
         bool validDate;
         bool validHours;
-        int selectedMod;
+        int selectedMod, selectedIndex;
 
         // Declare variables to store error messages
         string hrsErrorMessage, dateErrorMessage;
@@ -65,7 +65,7 @@ namespace StudentStudyHub
                 dbHelper.UpdateTracker(d, stHrs, wk);
 
                 // Display a message indicating that hours are saved
-                saveMsg.Text = DBHelper.moduleList[selectedMod].ModuleName + "'s Hours Saved ";
+                saveMsg.Text = DBHelper.moduleList[selectedIndex].ModuleName + "'s Hours Saved ";
                 saveMsg.Visible = true;
 
             }
@@ -88,6 +88,7 @@ namespace StudentStudyHub
             if (!string.IsNullOrEmpty(modDropDownList.SelectedValue))
             {// IS TAKEING THE MODID NOT THEINDEX
                 selectedMod = Convert.ToInt32(modDropDownList.SelectedValue);
+                selectedIndex = Convert.ToInt32(modDropDownList.SelectedIndex);
                 string modCode = modDropDownList.SelectedItem.Text;
                 dbHelper.FindModule(modCode);
                
