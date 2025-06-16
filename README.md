@@ -175,14 +175,14 @@ Additionally, the page will display a key for the graph and hovering over each b
  
 This graphical representation provides a visual insight into your study progress, allowing you to compare your actual study hours with the recommended ideal study hours. It helps in identifying trends, evaluating consistency, and making informed adjustments to your study routine.
 
-# POE
+# Student Study Hub
 
 ## Overview
 
 Student Study Hub is a ASP.NET Web Application Console App developed on the .NET framework 4.8.
 Student Study Hub is a web-based application designed to enhance the academic experience of students by providing tools to manage and optimize their study routines for the semester. This application allows students to seamlessly input and manage details of their modules, track study hours, monitor their progress throughout the semester and view their progress.
-The Study Tracker Application was conceived as a project for the PROGRAMMING 2B course POE Submission, aiming to serve as a valuable tool for enhancing the learning experience throughout the semester. 
-THEREFORE THE WEBSITE F NO LONGER AVALIBLE ON THE AZURE, AS SCHOOL PROVIDED HOSTING SERVIES HAVE BEEN DEACTIVATED 
+The Study Tracker Application serves as a valuable tool for enhancing the learning experience throughout the semester. 
+THE WEBSITE NO LONGER AVALIBLE ON THE AZURE, AS SCHOOL PROVIDED HOSTING SERVIES HAVE BEEN DEACTIVATED 
 
 
 ## Usage
