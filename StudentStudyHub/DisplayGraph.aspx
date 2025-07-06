@@ -44,7 +44,7 @@
             <!-- Graph -->
             <div class="card border-dark">
                 <center>
-                    <asp:Chart ID="Chart1" runat="server" Width="800px" Height="600px" BackColor="Indigo" BackGradientStyle="LeftRight" BackSecondaryColor="#1b0d33" Palette="SeaGreen" PaletteCustomColors="OliveDrab" RightToLeft="Yes">
+                    <asp:Chart ID="Chart1" runat="server" Width="800px" Height="600px" BackColor="Indigo" BackGradientStyle="LeftRight" BackSecondaryColor="#1b0d33" Palette="Pastel" PaletteCustomColors="OliveDrab" RightToLeft="Yes">
                         <Series>
                             <asp:Series Name="StudyDataSeries" LegendText="Actual hours of study"></asp:Series>
                             <asp:Series Name="GoalDataSeries" LegendText="Ideal study hours"></asp:Series>

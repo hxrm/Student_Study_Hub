@@ -77,7 +77,7 @@
             <div style="margin-bottom: 80px;"></div>
             <div class="card border-success mb-12">
                 <div class="card-header  text-center">
-                    <p class="card-text" style="color: whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank">Study Hub</a></p>
+                    <p class="card-text" style="color: whitesmoke">&copy; All rights reserved. <a class="footerlinks" href="Home.aspx">Study Hub</a></p>
                 </div>
             </div>
         </footer>

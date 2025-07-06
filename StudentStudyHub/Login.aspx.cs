@@ -21,14 +21,13 @@ namespace StudentStudyHub
 
         // Database path and connection string
         static string relativePath = "|DataDirectory|\\TimeAppDB.mdf";
-       // string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={relativePath};Integrated Security=True"; 
-        string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\source\\repos\\StudentStudyHub\\StudentStudyHub\\App_Data\\StudyDB.mdf;Integrated Security=True";
+        string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={relativePath};Integrated Security=True"; 
+       // string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\source\\repos\\StudentStudyHub\\StudentStudyHub\\App_Data\\TimeAppDB.mdf;Integrated Security=True";
 
 
         // Default constructor
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         //Submit button click 

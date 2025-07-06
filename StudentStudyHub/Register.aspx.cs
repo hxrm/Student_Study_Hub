@@ -17,8 +17,8 @@ namespace StudentStudyHub
     {
         // Database path and connection string
         static string relativePath = "|DataDirectory|\\TimeAppDB.mdf";
-        // string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={relativePath};Integrated Security=True";
-        string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\source\\repos\\StudentStudyHub\\StudentStudyHub\\App_Data\\StudyDB.mdf;Integrated Security=True";
+        string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={relativePath};Integrated Security=True";
+        //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\source\\repos\\StudentStudyHub\\StudentStudyHub\\App_Data\\TimeAppDB.mdf;Integrated Security=True";
         // Variables for password, email validation, and threads
         string hpWord;
         bool validPWord, validEMail, validFName, validSName;

@@ -9,8 +9,6 @@
 
 namespace StudentStudyHub
 {
-
-
     public partial class Home
     {
     }
